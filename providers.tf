@@ -1,0 +1,15 @@
+provider "aws" {
+    region = "${var.AWS_REGION}"
+    access_key = "???????????????"
+    secret_key = "???????????????"
+}
+
+terraform {
+  required_version = ">= 1.0.5"
+  required_providers {
+    aws = {
+      version = ">= 3.56.0"
+      source  = "hashicorp/aws"
+    }
+  }
+}
